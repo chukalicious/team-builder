@@ -1,20 +1,28 @@
 import React, { useState } from 'react';
 import './App.css';
+import Form from './Form'
+import styled from 'styled-components'
+
+const FormContainer = styled.div`
+  width: 80%;
+  margin: 0 auto; 
+  display: flex; 
+  flex-direction: column; 
+`
 
 function App() {
 
   const [memberData, setMemberData] = useState({
-    mName: ''
+    'member-name': ''
   })
 
   return (
-    <div>
+    <FormContainer>
       <h1>Members</h1>
-      <form>
 
+      <Form /> 
 
-      </form>
-    </div>
+    </FormContainer>
   );
 }
 
