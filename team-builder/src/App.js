@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Form from './Form'
 import styled from 'styled-components'
@@ -12,9 +12,7 @@ const FormContainer = styled.div`
 
 function App() {
 
-  const [memberData, setMemberData] = useState({
-    'member-name': ''
-  })
+  
 
   return (
     <FormContainer>
